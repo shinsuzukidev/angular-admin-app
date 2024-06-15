@@ -1,4 +1,14 @@
 <h1>{{ title }}</h1>
 
-<app-members></app-members>
+<nav>
+  <!-- rouetrLinkを読み込まないと機能しない-->
+  <a routerLink="/top">top</a>
+  <a routerLink="/dashboard">dashboard</a>
+  <a routerLink="/members">社員一覧</a>
+  <a routerLink="/sample">sample</a>
+</nav>
+
+<!-- <app-members></app-members> -->
+<!-- ルーティングの表示-->
+<router-outlet></router-outlet>
 <app-messages></app-messages>
