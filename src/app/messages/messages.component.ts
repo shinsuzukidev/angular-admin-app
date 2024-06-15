@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './messages.component.css',
 })
 export class MessagesComponent implements OnInit {
+  // public messageServiceとしている理由はHTML側から見れるようにするため
   constructor(public messageService: MessageService) {}
 
   ngOnInit(): void {}

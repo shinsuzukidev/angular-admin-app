@@ -5,7 +5,6 @@ import { FormsModule } from '@angular/forms';
 import { MEMBERS } from '../mock-members';
 import { MemberDetailComponent } from '../member-detail/member-detail.component';
 import { MemberService } from '../member.service';
-import { MessagesComponent } from '../messages/messages.component';
 import { MessageService } from '../message.service';
 
 @Component({
@@ -16,7 +15,6 @@ import { MessageService } from '../message.service';
     FormsModule,
     CommonModule,
     MemberDetailComponent,
-    MessagesComponent,
   ],
   templateUrl: './members.component.html',
   styleUrl: './members.component.css',
