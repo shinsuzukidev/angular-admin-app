@@ -1,0 +1,13 @@
+<h2>社員一覧</h2>
+<ul class="members">
+  <li
+    *ngFor="let member of members"
+    (click)="onSelect(member)"
+    [class.selected]="member === selectedMember"
+  >
+    <span class="badge">{{ member.id }}</span> {{ member.name }}
+  </li>
+</ul>
+
+<app-member-detail [member]="selectedMember"></app-member-detail>
+<app-messages></app-messages>
