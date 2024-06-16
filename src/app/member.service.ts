@@ -14,4 +14,12 @@ export class MemberService {
     this.messageService.add('MemberService: 社員一覧を取得しました。');
     return of(MEMBERS); // of は rxjs により Observableへ変換する、非同期処理
   }
+
+  getMember(id: number): Observable<Member> {
+    this.messageService.add(
+      `MessageService: 社員データ(id=${id})を取得しました。`
+    );
+
+    return of(MEMBERS.find((m) => m.id === id));
+  }
 }
